@@ -8,10 +8,10 @@ Slider with React, vite and Swiper.
 - import swiper ( whitout modules, core version ) -
 ``` import Swiper from 'swiper'```
 
--- import swiper ( with all modules ) -
-``` import Swiper from 'swiper/bundle'```
+- import swiper ( with all modules ) -
+``` import Swiper from 'swiper/bundle' ```
 
--- initialize Swiper
+- initialize Swiper
 const swiper = new Swiper( '#nameOfTheClass' , {
     #optionalparameters like 
     direction: 'vertical' | 'horizontal'

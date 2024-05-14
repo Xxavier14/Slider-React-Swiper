@@ -1,57 +1,51 @@
-// import Swiper bundle with all modules installed
+import React, { useEffect } from 'react';
 import Swiper from "swiper/bundle";
-
-// import styles bundle
 import "swiper/css/bundle";
 import "./Swiper.css";
 
-// init Swiper:
-const swiper = new Swiper(".swiper-hero", {
-  // Optional parameters
-  direction: "horizontal",
-  autoplay: {
-    delay:1000,
-    disableOnInteraction:false,
-  },
-  speed:1000,
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-
-const swipergreen = new Swiper(".swiper-green", {
-  // Optional parameters
-  direction: "vertical",
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,  // Ensure autoplay continues after interaction
-  },
-  speed: 1000,
-});
-
-const swiperbottom1 = new Swiper(".swiper-blue", {
-  // Optional parameters
-  direction: "vertical",
-  autoplay: {
-    delay: 1800,
-    disableOnInteraction: false,  // Ensure autoplay continues after interaction
-  },
-  speed: 1000,
-});
-
-const swiperbottom2 = new Swiper(".swiper-pink", {
-  // Optional parameters
-  direction: "vertical",
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,  // Ensure autoplay continues after interaction
-  },
-  speed: 1000,
-});
-
 export function ShowSlider() {
+  useEffect(() => {
+    // Initialize Swiper after the component has been mounted
+    const swiper = new Swiper(".swiper-hero", {
+      direction: "horizontal",
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+
+    const swipergreen = new Swiper(".swiper-green", {
+      direction: "vertical",
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+    });
+
+    const swiperbottom1 = new Swiper(".swiper-blue", {
+      direction: "vertical",
+      autoplay: {
+        delay: 1800,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+    });
+
+    const swiperbottom2 = new Swiper(".swiper-pink", {
+      direction: "vertical",
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+    });
+  }, []);
+
   return (
     <>
       <div className="swiper swiper-hero">
@@ -75,7 +69,6 @@ export function ShowSlider() {
             />
           </div>
         </div>
-
         <div className="swiper-scrollbar"></div>
       </div>
 
