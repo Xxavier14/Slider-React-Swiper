@@ -12,16 +12,9 @@ Slider with React, vite and Swiper.
 ``` import Swiper from 'swiper/bundle' ```
 
 - initialize Swiper
-const swiper = new Swiper( '#nameOfTheClass' , {
-    #optionalparameters like 
-    direction: 'vertical' | 'horizontal'
-    [examples: loop(boolean), speed(ms), spaceBetween(px)](https://swiperjs.com/swiper-api#parameters)
-
-    [moduleConfiguration:{}](https://swiperjs.com/swiper-api#modules)
-    pagination:{
-        
-    }
-}
-)
+    [Parameters link](https://swiperjs.com/swiper-api#parameters)
+    [Modules link](https://swiperjs.com/swiper-api#modules)
 
 - [Documentation of Swiper:](https://swiperjs.com/get-started)
+
+- The Swiper.js component was mounted before the DOM and the animations were not seen unless it was reloaded, this was solved with a useEffect in the initialization of the Swipers.
