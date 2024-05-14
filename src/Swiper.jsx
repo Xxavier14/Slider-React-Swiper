@@ -5,7 +5,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 // init Swiper:
-const swiper = new Swiper(...);
+// const swiper = new Swiper(...);
 
 const contenido = 'Helous'
 
