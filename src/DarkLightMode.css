@@ -1,0 +1,23 @@
+.container, .notcontainer{
+    z-index: 100;
+    background: rgb(48, 48, 48);
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    height: 40px;
+    width: 90px;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px 0px #000000d4;
+    transition: all ease 600ms;
+}
+
+.notcontainer{
+    background: rgb(141, 141, 141);
+}
+
+.container:hover, .notcontainer:hover {
+    transform: scale(1.12);
+    border: 1px solid rgb(247, 247, 247);
+    cursor: pointer;
+}
